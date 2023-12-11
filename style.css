@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: #efefff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background-color: #5153ff;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: .7s all;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.modal-content {
+    color: #000;
+    background-color: #fff;
+    padding: 25px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -10px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.modal-header,
+.modal-body {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.modal-footer {
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
